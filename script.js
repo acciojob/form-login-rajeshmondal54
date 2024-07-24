@@ -1,8 +1,9 @@
-document.addEventListener("DOMContentLoaded", function() {
-  document.getElementById("loginForm").addEventListener("submit", function(event) {
-    event.preventDefault();  // Prevent the form from submitting
-    const firstName = document.getElementById('fname').value;
-    const lastName = document.getElementById('lname').value;
-    alert(`${firstName} ${lastName}`);
-  });
-});
+function getFormvalue() {
+    //Write your code here
+	event.preventDefault();
+	var form = document.getElementById("form1");
+	var firstName = form.elements["fname"].value;
+    var lastName = form.elements["lname"].value;
+	alert(firstName + " " + lastName);
+
+}
